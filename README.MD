@@ -1,4 +1,4 @@
-# Go WebAssembly "Hello, World!"
+# Go WebAssembly Boilerplate
 
 This project demonstrates how to run a Go program in the browser using WebAssembly. It outputs "Hello, World!" to the webpage and browser console.
 

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Go WebAssembly</title>
+</head>
+<body>
+    <h1>Go WebAssembly Example</h1>
+    <p id="output">Loading...</p>
+    <script src="wasm_exec.js"></script>
+    <script>
+        const go = new Go();
+        WebAssembly.instantiateStreaming(fetch("hello.wasm"), go.importObject).then((result) => {
+            go.run(result.instance);
+        });
+    </script>
+</body>
+</html>
+
